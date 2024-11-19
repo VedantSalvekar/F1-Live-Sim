@@ -27,9 +27,8 @@ Open a terminal window and run the following commands to start the Docker servic
 2. Set the correct permissions and start the services:
 
    ```bash
-   chmod -R 777 storage/
    docker-compose up -d
-   docker build -t data-importer-image .
+   docker build -t data-importer-image . --no-cache
    ```
 
 3. Run the mock data importer:
