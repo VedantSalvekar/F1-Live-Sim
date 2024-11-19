@@ -133,8 +133,7 @@ Open a second terminal window and run the simulation:
 The project processes a subset of data provided by `fastf1`:
 
 ```
-Processed: WeatherData, RaceControlMessages, TimingData, SpeedTrap
-Not Processed: Heartbeat, CarData.z, Position.z, ExtrapolatedClock, TopThree, RcmSeries, TimingStats, TimingAppData, TrackStatus, DriverList, SessionInfo, SessionData, LapCount
+Processed: WeatherData, RaceControlMessages, TimingData, SpeedTrap, DriverComparision, GapToLeader
 ```
 
 ---
