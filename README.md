@@ -34,12 +34,12 @@ Open a terminal window and run the following commands to start the Docker servic
 3. Run the mock data importer:
 
    ```bash
-   docker run -it --rm \
-   --network prj_default \
-   -v ${PWD}/saves/partial_saved_data_2023_03_05.txt:/tmp/save.txt \
-   data-importer-image \
-   dataimporter process-mock-data /tmp/save.txt \
-   --influx-url http://influxdb:8086
+  docker run -it --rm `
+  -network f1-live-data-master_default `
+  -v ${PWD}/saves/partial_saved_data_2023_03_05.txt:/tmp/save.txt `
+  data-importer-image `
+  dataimporter processsimulationdata /tmp/save.txt `
+  --influxurl http://influxdb:8086
    ```
 
    - This command loads the mock telemetry data from the file `partial_saved_data_2023_03_05.txt` and populates the InfluxDB database.
