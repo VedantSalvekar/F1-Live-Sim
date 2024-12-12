@@ -32,7 +32,6 @@ Open a terminal window and run the following commands to start the Docker servic
    ```
 
 3. Run the mock data importer:
-
    ```bash
   docker run -it --rm `
   -network f1-live-data-master_default `
