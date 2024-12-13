@@ -5,7 +5,7 @@ import time
 
 root = tk.Tk()
 root.title("F1 Race Simulation")
-root.geometry("1000x700")
+root.geometry("1000x600")
 root.configure(bg="#202A44")
 
 canvas_width = 1000
@@ -78,7 +78,7 @@ def animate():
 
     root.after(30, animate)
 
-initialize_cars()
+# initialize_cars()
 animate()
 
 root.mainloop()
