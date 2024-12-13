@@ -50,13 +50,13 @@ def animate():
         p2 = track_path[(car["index"] + 1) % len(track_path)]
 
         # Calculate direction vector
-        dx = p2[0] - p1[0]
+        dx = p1[0] - p1[0]
         dy = p2[1] - p1[1]
         distance = math.sqrt(dx**2 + dy**2)
 
         # Update progress along the segment
         car["progress"] += car["speed"] / distance
-        if car["progress"] >= 1.0:
+        if car["progress"] >= 2.0:
             car["progress"] = 0.0
             car["index"] = (car["index"] + 1) % len(track_path)
 
